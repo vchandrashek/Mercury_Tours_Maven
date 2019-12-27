@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Test(failed)" parallel="tests">
+    <classes>
+      <class name="pom.mercury.tours.Batch_Execution_Smoke">
+        <methods>
+          <include name="TestSuite"/>
+        </methods>
+      </class> <!-- pom.mercury.tours.Batch_Execution_Smoke -->
+      <class name="pom.mercury.tours.Drag_Drop_Example">
+        <methods>
+          <include name="Drag_Drop"/>
+          <include name="Launch_Browser"/>
+          <include name="Close_Browser"/>
+        </methods>
+      </class> <!-- pom.mercury.tours.Drag_Drop_Example -->
+      <class name="pom.mercury.tours.Mouse_Over_Yatra">
+        <methods>
+          <include name="Close_Browser"/>
+          <include name="Sign_On"/>
+          <include name="Launch_Browser"/>
+        </methods>
+      </class> <!-- pom.mercury.tours.Mouse_Over_Yatra -->
+      <class name="pom.mercury.tours.HDFC_Netbanking_Alert_Handling">
+        <methods>
+          <include name="Sign_On"/>
+          <include name="Close_Browser"/>
+          <include name="Launch_Browser"/>
+        </methods>
+      </class> <!-- pom.mercury.tours.HDFC_Netbanking_Alert_Handling -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
